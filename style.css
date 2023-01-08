@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+*{
+    font-family: 'Bad Script', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(#8fe3e3,#7f80d5) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    background-color: #85a7e6;
+    padding: 20px;
+    color: white;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fefefe;
+    margin: auto;
+    height: 100%;
+    width: 500px;
+    box-shadow: 0 3px 10px black;
+}
+input{
+    width: 100%;
+    border: none;
+    border-top: 3px solid #b6b6b6;
+    border-bottom: 3px solid #b6b6b6;
+    padding: 10px;
+    font-size: 20px;
+}
+input:focus{
+    outline: none;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.btn_1,.btn_2{
+    color: white;
+    font-size: 30px;
+    padding: 30px 40px;
+    background-color: #87a7e3;
+    border-radius: 20px;
+}
+li{
+    padding: 20px;
+    background-color: #9ab2e0;
+}
+li img{
+    width: 0;
+    margin-right: 10px;
+    opacity: 0;
+    transition:width 0.2s,opacity 0.2s ;
+}
+li:nth-child(2n){
+    
+    background-color: #85a7e6
+}
+ul{
+    list-style-type: none;
+}
+
+.line,li:hover{
+     text-decoration: line-through;
+    background-color: #9ab2e0b7;
+    color: gray;
+}
+li:hover img{
+    width: 20px;
+    opacity: 1;
+}
