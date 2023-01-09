@@ -76,3 +76,10 @@ li:hover img{
     width: 20px;
     opacity: 1;
 }
+@media(max-widht: 768px){
+    li:hover{
+        text-decoration: none;
+       background-color: inherit;
+       color: inherit;
+   }
+}
